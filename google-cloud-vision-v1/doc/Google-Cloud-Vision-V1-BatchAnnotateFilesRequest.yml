@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest
+    children: 
+      - Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#requests
+      - Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#parent
+    fullName: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: BatchAnnotateFilesRequest
+    summary: "A list of requests to annotate files using the BatchAnnotateFiles API."
+    type: 'class'
+  - uid: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#requests
+    fullName: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#requests
+    name: requests
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: requests
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#requests => ::Array<::Google::Cloud::Vision::V1::AnnotateFileRequest>"
+      parameters:
+        []
+      return:
+          type:
+            - "::Array<::Google::Cloud::Vision::V1::AnnotateFileRequest>"
+          description: "Required. The list of file annotation requests. Right now we support only
+one AnnotateFileRequest in BatchAnnotateFilesRequest."
+  - uid: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#requests=
+    fullName: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#requests=
+    name: requests=
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: requests=
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#requests= => ::Array<::Google::Cloud::Vision::V1::AnnotateFileRequest>"
+      parameters:
+        []
+      return:
+          type:
+            - "::Array<::Google::Cloud::Vision::V1::AnnotateFileRequest>"
+          description: "Required. The list of file annotation requests. Right now we support only
+one AnnotateFileRequest in BatchAnnotateFilesRequest."
+  - uid: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#parent
+    fullName: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#parent
+    name: parent
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: parent
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#parent => ::String"
+      parameters:
+        []
+      return:
+          type:
+            - "::String"
+          description: "Optional. Target project and location to make a call.
+
+Format: `projects/{project-id}/locations/{location-id}`.
+
+If no parent is specified, a region will be chosen automatically.
+
+Supported location-ids:
+    `us`: USA country only,
+    `asia`: East asia areas, like Japan, Taiwan,
+    `eu`: The European Union.
+
+Example: `projects/project-A/locations/eu`."
+  - uid: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#parent=
+    fullName: Google::Cloud::Vision::V1::BatchAnnotateFilesRequest#parent=
+    name: parent=
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: parent=
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#parent= => ::String"
+      parameters:
+        []
+      return:
+          type:
+            - "::String"
+          description: "Optional. Target project and location to make a call.
+
+Format: `projects/{project-id}/locations/{location-id}`.
+
+If no parent is specified, a region will be chosen automatically.
+
+Supported location-ids:
+    `us`: USA country only,
+    `asia`: East asia areas, like Japan, Taiwan,
+    `eu`: The European Union.
+
+Example: `projects/project-A/locations/eu`."
+references: []

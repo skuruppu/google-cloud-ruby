@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Cloud::Vision
+    children: 
+      - Google::Cloud::Vision::V1
+    fullName: Google::Cloud::Vision
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: Vision
+    summary: ""
+    type: 'module'
+
+references: 
+  - uid: Google::Cloud::Vision::V1
+    fullName: Google::Cloud::Vision::V1
+    name: V1
+    module: google-cloud-vision-v1
+    id: V1
+    summary: "To load this package, including all its services, and instantiate a client:
+
+    require 'google/cloud/vision/v1'
+    client = ::Google::Cloud::Vision::V1::ProductSearch::Client.new"
+    parent: Google::Cloud::Vision
+

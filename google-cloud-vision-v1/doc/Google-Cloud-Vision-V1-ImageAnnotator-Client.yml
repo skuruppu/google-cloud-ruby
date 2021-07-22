@@ -1,0 +1,1091 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client
+    children: 
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client.configure
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#configure
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#initialize
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#operations_client
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#batch_annotate_images
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#batch_annotate_files
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#async_batch_annotate_images
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#async_batch_annotate_files
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#crop_hints_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#document_text_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#face_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#image_properties_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#label_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#landmark_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#logo_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#object_localization_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#product_search_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#safe_search_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#text_detection
+      - Google::Cloud::Vision::V1::ImageAnnotator::Client#web_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: Client
+    summary: "Client for the ImageAnnotator service.
+
+Service that performs Google Cloud Vision API detection tasks over client
+images, such as face, landmark, logo, label, and text detection. The
+ImageAnnotator service returns detected entities from the images."
+    type: 'class'
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client.configure
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client.configure
+    name: configure
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: configure
+    summary: "Configure the ImageAnnotator Client class.
+
+See {::Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration}
+for a description of the configuration fields.
+
+## Example
+
+To modify the configuration for all ImageAnnotator clients:
+
+    ::Google::Cloud::Vision::V1::ImageAnnotator::Client.configure do |config|
+      config.timeout = 10.0
+    end"
+    type: method
+    syntax:
+      description: "Configure the ImageAnnotator Client class.
+
+See {::Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration}
+for a description of the configuration fields.
+
+## Example
+
+To modify the configuration for all ImageAnnotator clients:
+
+    ::Google::Cloud::Vision::V1::ImageAnnotator::Client.configure do |config|
+      config.timeout = 10.0
+    end"
+      content: "#configure => Client::Configuration"
+      parameters:
+        []
+      return:
+          type:
+            - "Client::Configuration"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#configure
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#configure
+    name: configure
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: configure
+    summary: "Configure the ImageAnnotator Client instance.
+
+The configuration is set to the derived mode, meaning that values can be changed,
+but structural changes (adding new fields, etc.) are not allowed. Structural changes
+should be made on {Client.configure}.
+
+See {::Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration}
+for a description of the configuration fields."
+    type: method
+    syntax:
+      description: "Configure the ImageAnnotator Client instance.
+
+The configuration is set to the derived mode, meaning that values can be changed,
+but structural changes (adding new fields, etc.) are not allowed. Structural changes
+should be made on {Client.configure}.
+
+See {::Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration}
+for a description of the configuration fields."
+      content: "#configure => Client::Configuration"
+      parameters:
+        []
+      return:
+          type:
+            - "Client::Configuration"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#initialize
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#initialize
+    name: initialize
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: initialize
+    summary: "Create a new ImageAnnotator client object.
+
+## Examples
+
+To create a new ImageAnnotator client with the default
+configuration:
+
+    client = ::Google::Cloud::Vision::V1::ImageAnnotator::Client.new
+
+To create a new ImageAnnotator client with a custom
+configuration:
+
+    client = ::Google::Cloud::Vision::V1::ImageAnnotator::Client.new do |config|
+      config.timeout = 10.0
+    end"
+    type: method
+    syntax:
+      description: "Create a new ImageAnnotator client object.
+
+## Examples
+
+To create a new ImageAnnotator client with the default
+configuration:
+
+    client = ::Google::Cloud::Vision::V1::ImageAnnotator::Client.new
+
+To create a new ImageAnnotator client with a custom
+configuration:
+
+    client = ::Google::Cloud::Vision::V1::ImageAnnotator::Client.new do |config|
+      config.timeout = 10.0
+    end"
+      content: "#initialize => Client"
+      parameters:
+        []
+      return:
+          type:
+            - "Client"
+          description: "a new instance of Client"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#operations_client
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#operations_client
+    name: operations_client
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: operations_client
+    summary: "Get the associated client for long-running operations."
+    type: method
+    syntax:
+      description: "Get the associated client for long-running operations."
+      content: "#operations_client => ::Google::Cloud::Vision::V1::ImageAnnotator::Operations"
+      parameters:
+        []
+      return:
+          type:
+            - "::Google::Cloud::Vision::V1::ImageAnnotator::Operations"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#batch_annotate_images
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#batch_annotate_images
+    name: batch_annotate_images
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: batch_annotate_images
+    summary: "Run image detection and annotation for a batch of images."
+    type: method
+    syntax:
+      description: "Run image detection and annotation for a batch of images."
+      content: "#batch_annotate_images => ::Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+      parameters:
+        []
+      return:
+          type:
+            - "::Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#batch_annotate_files
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#batch_annotate_files
+    name: batch_annotate_files
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: batch_annotate_files
+    summary: "Service that performs image detection and annotation for a batch of files.
+Now only 'application/pdf', 'image/tiff' and 'image/gif' are supported.
+
+This service will extract at most 5 (customers can specify which 5 in
+AnnotateFileRequest.pages) frames (gif) or pages (pdf or tiff) from each
+file provided and perform detection and annotation for each image
+extracted."
+    type: method
+    syntax:
+      description: "Service that performs image detection and annotation for a batch of files.
+Now only 'application/pdf', 'image/tiff' and 'image/gif' are supported.
+
+This service will extract at most 5 (customers can specify which 5 in
+AnnotateFileRequest.pages) frames (gif) or pages (pdf or tiff) from each
+file provided and perform detection and annotation for each image
+extracted."
+      content: "#batch_annotate_files => ::Google::Cloud::Vision::V1::BatchAnnotateFilesResponse"
+      parameters:
+        []
+      return:
+          type:
+            - "::Google::Cloud::Vision::V1::BatchAnnotateFilesResponse"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#async_batch_annotate_images
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#async_batch_annotate_images
+    name: async_batch_annotate_images
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: async_batch_annotate_images
+    summary: "Run asynchronous image detection and annotation for a list of images.
+
+Progress and results can be retrieved through the
+`google.longrunning.Operations` interface.
+`Operation.metadata` contains `OperationMetadata` (metadata).
+`Operation.response` contains `AsyncBatchAnnotateImagesResponse` (results).
+
+This service will write image annotation outputs to json files in customer
+GCS bucket, each json file containing BatchAnnotateImagesResponse proto."
+    type: method
+    syntax:
+      description: "Run asynchronous image detection and annotation for a list of images.
+
+Progress and results can be retrieved through the
+`google.longrunning.Operations` interface.
+`Operation.metadata` contains `OperationMetadata` (metadata).
+`Operation.response` contains `AsyncBatchAnnotateImagesResponse` (results).
+
+This service will write image annotation outputs to json files in customer
+GCS bucket, each json file containing BatchAnnotateImagesResponse proto."
+      content: "#async_batch_annotate_images => ::Gapic::Operation"
+      parameters:
+        []
+      return:
+          type:
+            - "::Gapic::Operation"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#async_batch_annotate_files
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#async_batch_annotate_files
+    name: async_batch_annotate_files
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: async_batch_annotate_files
+    summary: "Run asynchronous image detection and annotation for a list of generic
+files, such as PDF files, which may contain multiple pages and multiple
+images per page. Progress and results can be retrieved through the
+`google.longrunning.Operations` interface.
+`Operation.metadata` contains `OperationMetadata` (metadata).
+`Operation.response` contains `AsyncBatchAnnotateFilesResponse` (results)."
+    type: method
+    syntax:
+      description: "Run asynchronous image detection and annotation for a list of generic
+files, such as PDF files, which may contain multiple pages and multiple
+images per page. Progress and results can be retrieved through the
+`google.longrunning.Operations` interface.
+`Operation.metadata` contains `OperationMetadata` (metadata).
+`Operation.response` contains `AsyncBatchAnnotateFilesResponse` (results)."
+      content: "#async_batch_annotate_files => ::Gapic::Operation"
+      parameters:
+        []
+      return:
+          type:
+            - "::Gapic::Operation"
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#crop_hints_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#crop_hints_detection
+    name: crop_hints_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: crop_hints_detection
+    summary: "Detect features of type CROP_HINTS."
+    type: method
+    syntax:
+      description: "Detect features of type CROP_HINTS."
+      content: "#crop_hints_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#document_text_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#document_text_detection
+    name: document_text_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: document_text_detection
+    summary: "Detect features of type DOCUMENT_TEXT_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type DOCUMENT_TEXT_DETECTION."
+      content: "#document_text_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#face_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#face_detection
+    name: face_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: face_detection
+    summary: "Detect features of type FACE_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type FACE_DETECTION."
+      content: "#face_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#image_properties_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#image_properties_detection
+    name: image_properties_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: image_properties_detection
+    summary: "Detect features of type IMAGE_PROPERTIES."
+    type: method
+    syntax:
+      description: "Detect features of type IMAGE_PROPERTIES."
+      content: "#image_properties_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#label_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#label_detection
+    name: label_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: label_detection
+    summary: "Detect features of type LABEL_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type LABEL_DETECTION."
+      content: "#label_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#landmark_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#landmark_detection
+    name: landmark_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: landmark_detection
+    summary: "Detect features of type LANDMARK_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type LANDMARK_DETECTION."
+      content: "#landmark_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#logo_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#logo_detection
+    name: logo_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: logo_detection
+    summary: "Detect features of type LOGO_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type LOGO_DETECTION."
+      content: "#logo_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#object_localization_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#object_localization_detection
+    name: object_localization_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: object_localization_detection
+    summary: "Detect features of type OBJECT_LOCALIZATION."
+    type: method
+    syntax:
+      description: "Detect features of type OBJECT_LOCALIZATION."
+      content: "#object_localization_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#product_search_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#product_search_detection
+    name: product_search_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: product_search_detection
+    summary: "Detect features of type PRODUCT_SEARCH."
+    type: method
+    syntax:
+      description: "Detect features of type PRODUCT_SEARCH."
+      content: "#product_search_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#safe_search_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#safe_search_detection
+    name: safe_search_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: safe_search_detection
+    summary: "Detect features of type SAFE_SEARCH_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type SAFE_SEARCH_DETECTION."
+      content: "#safe_search_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#text_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#text_detection
+    name: text_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: text_detection
+    summary: "Detect features of type TEXT_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type TEXT_DETECTION."
+      content: "#text_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client#web_detection
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client#web_detection
+    name: web_detection
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: web_detection
+    summary: "Detect features of type WEB_DETECTION."
+    type: method
+    syntax:
+      description: "Detect features of type WEB_DETECTION."
+      content: "#web_detection(images:, image:, max_results:, options:, async:, mime_type:, batch_size:, destination:, image_context:) => Google::Cloud::Vision::V1::BatchAnnotateImagesResponse, Gapic::Operation"
+      parameters:
+        - id: images
+          type:
+            - "Array<String>"
+            - "Array<File>"
+          description: "An array containing files, file paths, io objects, image urls, or
+Google Cloud Storage urls. Can be used with or instead of image."
+        - id: image
+          type:
+            - "File"
+            - "String"
+          description: "A file, file path, io object, url pointing to an image, or Google
+Cloud Storage url. Can be used with or instead of images."
+        - id: max_results
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10."
+        - id: options
+          type:
+            - "Gapic::CallOptions"
+          description: "Optional. Overrides the default settings for this call, e.g,
+timeout, retries, etc."
+        - id: async
+          type:
+            - "Boolean"
+          description: "Optional. Defaults to `false`. If `false`, performs the request
+synchronously, returning a `BatchAnnotateImagesResponse`. If `true`,
+performs the request asynchronously, returning a `Gapic::Operation`."
+        - id: mime_type
+          type:
+            - "String"
+          description: "Required only if async is `true`."
+        - id: batch_size
+          type:
+            - "Integer"
+          description: "Optional. Defaults to 10. When async is `true`, this specifies the
+number of input files per output json."
+        - id: destination
+          type:
+            - "String"
+          description: "A Google Cloud Storage location for storing the output. Required
+only if async is `true`."
+        - id: image_context
+          type:
+            - "Hash"
+          description: "Optional. Image context and/or feature-specific parameters."
+      return:
+          type:
+            - "Google::Cloud::Vision::V1::BatchAnnotateImagesResponse"
+          description: "if async is `false`."
+          type:
+            - "Gapic::Operation"
+          description: "if async is `true`."
+references: 
+  - uid: Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration
+    fullName: Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration
+    name: Configuration
+    module: google-cloud-vision-v1
+    id: Configuration
+    summary: "Configuration class for the ImageAnnotator API.
+
+This class represents the configuration for ImageAnnotator,
+providing control over timeouts, retry behavior, logging, transport
+parameters, and other low-level controls. Certain parameters can also be
+applied individually to specific RPCs. See
+{::Google::Cloud::Vision::V1::ImageAnnotator::Client::Configuration::Rpcs}
+for a list of RPCs that can be configured independently.
+
+Configuration can be applied globally to all clients, or to a single client
+on construction.
+
+# Examples
+
+To modify the global config, setting the timeout for batch_annotate_images
+to 20 seconds, and all remaining timeouts to 10 seconds:
+
+    ::Google::Cloud::Vision::V1::ImageAnnotator::Client.configure do |config|
+      config.timeout = 10.0
+      config.rpcs.batch_annotate_images.timeout = 20.0
+    end
+
+To apply the above configuration only to a new client:
+
+    client = ::Google::Cloud::Vision::V1::ImageAnnotator::Client.new do |config|
+      config.timeout = 10.0
+      config.rpcs.batch_annotate_images.timeout = 20.0
+    end"
+    parent: Google::Cloud::Vision::V1::ImageAnnotator::Client
+

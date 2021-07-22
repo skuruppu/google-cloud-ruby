@@ -1,0 +1,8 @@
+update_time {
+  seconds: 1626936277
+  nanos: 442846000
+}
+name: "google-cloud-vision-v1"
+version: "0.6.2"
+language: "ruby"
+distribution_name: "google-cloud-vision-v1"

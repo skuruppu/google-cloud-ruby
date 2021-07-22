@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Cloud::Vision::V1::TextDetectionParams
+    children: 
+      - Google::Cloud::Vision::V1::TextDetectionParams#enable_text_detection_confidence_score
+    fullName: Google::Cloud::Vision::V1::TextDetectionParams
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: TextDetectionParams
+    summary: "Parameters for text detections. This is used to control TEXT_DETECTION and
+DOCUMENT_TEXT_DETECTION features."
+    type: 'class'
+  - uid: Google::Cloud::Vision::V1::TextDetectionParams#enable_text_detection_confidence_score
+    fullName: Google::Cloud::Vision::V1::TextDetectionParams#enable_text_detection_confidence_score
+    name: enable_text_detection_confidence_score
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: enable_text_detection_confidence_score
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#enable_text_detection_confidence_score => ::Boolean"
+      parameters:
+        []
+      return:
+          type:
+            - "::Boolean"
+          description: "By default, Cloud Vision API only includes confidence score for
+DOCUMENT_TEXT_DETECTION result. Set the flag to true to include confidence
+score for TEXT_DETECTION as well."
+  - uid: Google::Cloud::Vision::V1::TextDetectionParams#enable_text_detection_confidence_score=
+    fullName: Google::Cloud::Vision::V1::TextDetectionParams#enable_text_detection_confidence_score=
+    name: enable_text_detection_confidence_score=
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: enable_text_detection_confidence_score=
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#enable_text_detection_confidence_score= => ::Boolean"
+      parameters:
+        []
+      return:
+          type:
+            - "::Boolean"
+          description: "By default, Cloud Vision API only includes confidence score for
+DOCUMENT_TEXT_DETECTION result. Set the flag to true to include confidence
+score for TEXT_DETECTION as well."
+references: []

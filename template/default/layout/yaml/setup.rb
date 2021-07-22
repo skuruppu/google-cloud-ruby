@@ -33,6 +33,9 @@ def init
   @method_text = @methods.map { |method|
     @method = method
     # puts method.methods.sort - methods
+    puts method.signature
+    # exit
+    # puts method.methods.sort - methods
     # puts method.docstring
     # puts ""
     # method.tags.each do |tag|

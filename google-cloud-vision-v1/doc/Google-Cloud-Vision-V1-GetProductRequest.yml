@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Cloud::Vision::V1::GetProductRequest
+    children: 
+      - Google::Cloud::Vision::V1::GetProductRequest#name
+    fullName: Google::Cloud::Vision::V1::GetProductRequest
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: GetProductRequest
+    summary: "Request message for the `GetProduct` method."
+    type: 'class'
+  - uid: Google::Cloud::Vision::V1::GetProductRequest#name
+    fullName: Google::Cloud::Vision::V1::GetProductRequest#name
+    name: name
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: name
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#name => ::String"
+      parameters:
+        []
+      return:
+          type:
+            - "::String"
+          description: "Required. Resource name of the Product to get.
+
+Format is:
+`projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`"
+  - uid: Google::Cloud::Vision::V1::GetProductRequest#name=
+    fullName: Google::Cloud::Vision::V1::GetProductRequest#name=
+    name: name=
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: name=
+    summary: ""
+    type: method
+    syntax:
+      description: ""
+      content: "#name= => ::String"
+      parameters:
+        []
+      return:
+          type:
+            - "::String"
+          description: "Required. Resource name of the Product to get.
+
+Format is:
+`projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`"
+references: []

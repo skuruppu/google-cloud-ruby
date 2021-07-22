@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Api::ResourceDescriptor::Style
+    children: 
+      - Google::Api::ResourceDescriptor::Style::STYLE_UNSPECIFIED
+      - Google::Api::ResourceDescriptor::Style::DECLARATIVE_FRIENDLY
+    fullName: Google::Api::ResourceDescriptor::Style
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: Style
+    summary: "A flag representing a specific style that a resource claims to conform to."
+    type: 'module'
+  - uid: Google::Api::ResourceDescriptor::Style::STYLE_UNSPECIFIED
+    fullName: Google::Api::ResourceDescriptor::Style::STYLE_UNSPECIFIED
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: STYLE_UNSPECIFIED
+    summary: "The unspecified value. Do not use."
+    type: 'constant'
+
+  - uid: Google::Api::ResourceDescriptor::Style::DECLARATIVE_FRIENDLY
+    fullName: Google::Api::ResourceDescriptor::Style::DECLARATIVE_FRIENDLY
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: DECLARATIVE_FRIENDLY
+    summary: "This resource is intended to be 'declarative-friendly'.
+
+Declarative-friendly resources must be more strictly consistent, and
+setting this to true communicates to tools that this resource should
+adhere to declarative-friendly expectations.
+
+Note: This is used by the API linter (linter.aip.dev) to enable
+additional checks."
+    type: 'constant'
+
+references: []

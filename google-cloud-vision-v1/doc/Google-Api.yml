@@ -1,0 +1,153 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Google::Api
+    children: 
+      - Google::Api::ResourceDescriptor
+      - Google::Api::ResourceReference
+      - Google::Api::FieldBehavior
+    fullName: Google::Api
+    langs:
+      - ruby
+    module: google-cloud-vision-v1
+    id: Api
+    summary: ""
+    type: 'module'
+
+references: 
+  - uid: Google::Api::ResourceDescriptor
+    fullName: Google::Api::ResourceDescriptor
+    name: ResourceDescriptor
+    module: google-cloud-vision-v1
+    id: ResourceDescriptor
+    summary: "A simple descriptor of a resource type.
+
+ResourceDescriptor annotates a resource message (either by means of a
+protobuf annotation or use in the service config), and associates the
+resource's schema, the resource type, and the pattern of the resource name.
+
+Example:
+
+    message Topic {
+      // Indicates this message defines a resource schema.
+      // Declares the resource type in the format of {service}/{kind}.
+      // For Kubernetes resources, the format is {api group}/{kind}.
+      option (google.api.resource) = {
+        type: 'pubsub.googleapis.com/Topic'
+        name_descriptor: {
+          pattern: 'projects/{project}/topics/{topic}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Project'
+          parent_name_extractor: 'projects/{project}'
+        }
+      };
+    }
+
+The ResourceDescriptor Yaml config will look like:
+
+    resources:
+    - type: 'pubsub.googleapis.com/Topic'
+      name_descriptor:
+        - pattern: 'projects/{project}/topics/{topic}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Project'
+          parent_name_extractor: 'projects/{project}'
+
+Sometimes, resources have multiple patterns, typically because they can
+live under multiple parents.
+
+Example:
+
+    message LogEntry {
+      option (google.api.resource) = {
+        type: 'logging.googleapis.com/LogEntry'
+        name_descriptor: {
+          pattern: 'projects/{project}/logs/{log}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Project'
+          parent_name_extractor: 'projects/{project}'
+        }
+        name_descriptor: {
+          pattern: 'folders/{folder}/logs/{log}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Folder'
+          parent_name_extractor: 'folders/{folder}'
+        }
+        name_descriptor: {
+          pattern: 'organizations/{organization}/logs/{log}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Organization'
+          parent_name_extractor: 'organizations/{organization}'
+        }
+        name_descriptor: {
+          pattern: 'billingAccounts/{billing_account}/logs/{log}'
+          parent_type: 'billing.googleapis.com/BillingAccount'
+          parent_name_extractor: 'billingAccounts/{billing_account}'
+        }
+      };
+    }
+
+The ResourceDescriptor Yaml config will look like:
+
+    resources:
+    - type: 'logging.googleapis.com/LogEntry'
+      name_descriptor:
+        - pattern: 'projects/{project}/logs/{log}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Project'
+          parent_name_extractor: 'projects/{project}'
+        - pattern: 'folders/{folder}/logs/{log}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Folder'
+          parent_name_extractor: 'folders/{folder}'
+        - pattern: 'organizations/{organization}/logs/{log}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Organization'
+          parent_name_extractor: 'organizations/{organization}'
+        - pattern: 'billingAccounts/{billing_account}/logs/{log}'
+          parent_type: 'billing.googleapis.com/BillingAccount'
+          parent_name_extractor: 'billingAccounts/{billing_account}'
+
+For flexible resources, the resource name doesn't contain parent names, but
+the resource itself has parents for policy evaluation.
+
+Example:
+
+    message Shelf {
+      option (google.api.resource) = {
+        type: 'library.googleapis.com/Shelf'
+        name_descriptor: {
+          pattern: 'shelves/{shelf}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Project'
+        }
+        name_descriptor: {
+          pattern: 'shelves/{shelf}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Folder'
+        }
+      };
+    }
+
+The ResourceDescriptor Yaml config will look like:
+
+    resources:
+    - type: 'library.googleapis.com/Shelf'
+      name_descriptor:
+        - pattern: 'shelves/{shelf}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Project'
+        - pattern: 'shelves/{shelf}'
+          parent_type: 'cloudresourcemanager.googleapis.com/Folder'"
+    parent: Google::Api
+
+  - uid: Google::Api::ResourceReference
+    fullName: Google::Api::ResourceReference
+    name: ResourceReference
+    module: google-cloud-vision-v1
+    id: ResourceReference
+    summary: "Defines a proto annotation that describes a string field that refers to
+an API resource."
+    parent: Google::Api
+
+  - uid: Google::Api::FieldBehavior
+    fullName: Google::Api::FieldBehavior
+    name: FieldBehavior
+    module: google-cloud-vision-v1
+    id: FieldBehavior
+    summary: "An indicator of the behavior of a given field (for example, that a field
+is required in requests, or given as output but ignored as input).
+This **does not** change the behavior in protocol buffers itself; it only
+denotes the behavior and may affect how API tooling handles the field.
+
+Note: This enum **may** receive new values in the future."
+    parent: Google::Api
+

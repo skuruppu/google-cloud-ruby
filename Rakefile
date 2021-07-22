@@ -528,6 +528,12 @@ namespace :kokoro do
     exit kokoro.exit_status
   end
 
+  task :one_local_cloudrad_docs, [:gem] do |t, args|
+    gem = args[:gem]
+    kokoro.one_local_cloudrad_docs gem
+    exit kokoro.exit_status
+  end
+
   task :one_local_docs_test, [:gem] do |t, args|
     gem = args[:gem]
     kokoro.one_local_docs_test gem

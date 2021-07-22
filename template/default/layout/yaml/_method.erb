@@ -1,8 +1,20 @@
   - uid: <%= @method.path %>
     fullName: <%= @method.path %>
+    name: <%= @method.name %>
     langs:
       - ruby
     module: <%= ENV["CLOUDRAD_GEM_NAME"] %>
     id: <%= @method.name %>
     summary: "<%= docstring @method %>"
-    type: '<%= @method.type %>'
+    type: <%= @method.type %>
+    syntax:
+      description: "<%= docstring @method %>"
+      content: "<%= method_signature %>"
+      parameters:
+<%= 
+  param_text
+%>
+      return:
+<%= 
+  return_text
+%>
